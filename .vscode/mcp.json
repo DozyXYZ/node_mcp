@@ -1,0 +1,10 @@
+{
+  "servers": {
+    "node-mcp": {
+      "command": "node",
+      "args": [
+        "C:\\PATH\\TO\\PARENT\\FOLDER\\projects\\node_mcp\\build\\index.js"
+      ]
+    }
+  }
+}
