@@ -94,6 +94,30 @@ server.registerResource(
   },
 );
 
+// PROMPT: Set up prompt to explain SQL query
+server.registerPrompt(
+  "explain-sql",
+  {
+    description: "Explain the give SQL query",
+    argsSchema: {
+      sql: z.string().describe("The SQL query to explain"),
+    },
+  },
+  ({ sql }) => {
+    return {
+      messages: [
+        {
+          role: "user",
+          content: {
+            type: "text",
+            text: `Give me a detailed explanation of the following SQL query in plain English: ${sql}. Make it very detailed and specific ofr a beginner to understand`,
+          },
+        },
+      ],
+    };
+  },
+);
+
 async function main() {
   const transport = new StdioServerTransport();
   await server.connect(transport);
