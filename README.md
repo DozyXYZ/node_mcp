@@ -84,14 +84,14 @@ Arguments: build/index.js
 
 ### 4. Test the registered Tools, Resources, and Prompts
 
-- **Tools**: Functions you expose to the MCP client (e.g., add-numbers, get_github_repos).
+**Tools**: Functions you expose to the MCP client (e.g., add-numbers, get_github_repos).
 
 ```
 Ask the agent: what is 10 + 10? -> It will select tool add-numbers
 Ask the agent: Get me all the github repos of user DozyXYZ -> It will select get_github_repos
 ```
 
-- **Resources**: Data or files the server can provide (e.g., building rules from `src/data/building-rules.doc`).
+**Resources**: Data or files the server can provide (e.g., building rules from `src/data/building-rules.doc`).
 
 - In the Chat Input, **click "+" > Connectors > Add from node_mcp > Building-rules**
 
@@ -101,7 +101,7 @@ What are the pets and parking rules?
 etc.
 ```
 
-- **Prompts**: Custom prompt templates for LLMs (e.g., explain-sql).
+**Prompts**: Custom prompt templates for LLMs (e.g., explain-sql).
 
 - In the Chat Input, **click "+" > Connectors > Add from node_mcp > Explain-sql**
 
