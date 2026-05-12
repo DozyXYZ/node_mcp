@@ -104,10 +104,9 @@ etc.
 **Prompts**: Custom prompt templates for LLMs (e.g., explain-sql).
 
 - In the Chat Input, **click "+" > Connectors > Add from node_mcp > Explain-sql**
+- Copy your SQL to "Enter prompt input" pop-up. Example:
 
 ```
-Copy your SQL to "Enter prompt input" pop-up. Example:
-
 WITH toronto_ppl AS (
   SELECT DISTINCT name
   FROM population
