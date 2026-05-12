@@ -8,6 +8,7 @@ const server = new McpServer({
   version: "0.0.1",
 });
 
+// TOOL: Test add 2 numbers
 server.registerTool(
   "add-numbers",
   {
@@ -21,6 +22,40 @@ server.registerTool(
   ({ a, b }) => {
     return {
       content: [{ type: "text", text: `Total is ${a + b}` }],
+    };
+  },
+);
+
+// TOOL: Get github repo from given username
+server.registerTool(
+  "get_github_repos",
+  {
+    title: "Get Github Repos",
+    description: "Simple get Github Repo from the given username",
+    inputSchema: {
+      username: z.string().describe("Github username"),
+    },
+  },
+  async ({ username }) => {
+    const res = await fetch(`https://api.github.com/users/${username}/repos`, {
+      headers: { "User-Agent": "MCP-Server" },
+    });
+
+    if (!res.ok) throw new Error("Github API error!");
+
+    const repos = await res.json();
+
+    const repoList = repos
+      .map((repo: any, i: number) => `${i + 1}. ${repo.name}`)
+      .join("\n\n");
+
+    return {
+      content: [
+        {
+          type: "text",
+          text: `Github repositories for ${username}: (${repos.length} repos): \n\n${repoList}`,
+        },
+      ],
     };
   },
 );
