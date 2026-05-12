@@ -1,0 +1,140 @@
+    {
+        "id": 1,
+        "category": "Noise",
+        "title": "Quiet Hours",
+        "rule": "Maintain quiet after 22:00 (10 PM) until 08:00 (8 AM)",
+        "description": "Loud music, parties, or excessive noise during these hours may result in complaints and penalties"
+    },
+    {
+        "id": 2,
+        "category": "Noise",
+        "title": "Common Area Noise",
+        "rule": "Keep noise levels low in hallways, stairwells, and lobbies at all times",
+        "description": "Conversations, phone calls, and music in shared spaces must be kept at a considerate volume to avoid disturbing other residents"
+    },
+    {
+        "id": 3,
+        "category": "Cleanliness",
+        "title": "Common Area Cleanliness",
+        "rule": "Keep all shared spaces clean and free of personal belongings",
+        "description": "Hallways, lobbies, laundry rooms, and other common areas must be left clean after use; items left unattended may be removed"
+    },
+    {
+        "id": 4,
+        "category": "Cleanliness",
+        "title": "Waste Disposal",
+        "rule": "Dispose of all trash in designated bins and follow recycling guidelines",
+        "description": "Improper waste disposal, including leaving bags in hallways or using wrong bins, may result in fines and sanitation issues"
+    },
+    {
+        "id": 5,
+        "category": "Cleanliness",
+        "title": "Pest Prevention",
+        "rule": "Do not leave food waste or open containers in common areas or on balconies",
+        "description": "Food left in shared spaces attracts pests and creates hygiene hazards affecting the entire building"
+    },
+    {
+        "id": 6,
+        "category": "Security",
+        "title": "Entry Access",
+        "rule": "Do not allow unauthorized individuals to enter the building by holding doors open (tailgating)",
+        "description": "All residents and visitors must use proper access credentials; tailgating compromises the security of all tenants"
+    },
+    {
+        "id": 7,
+        "category": "Security",
+        "title": "Key & Access Card Policy",
+        "rule": "Do not duplicate or share access keys or cards with non-residents",
+        "description": "Lost or stolen access credentials must be reported to management immediately; unauthorized duplication is strictly prohibited"
+    },
+    {
+        "id": 8,
+        "category": "Security",
+        "title": "Visitor Registration",
+        "rule": "Residents must register overnight visitors staying more than 3 consecutive nights",
+        "description": "Unregistered long-term visitors violate occupancy terms and may pose security and insurance risks for the building"
+    },
+    {
+        "id": 9,
+        "category": "Parking",
+        "title": "Assigned Parking",
+        "rule": "Park only in your designated parking space; do not occupy visitor or other residents' spots",
+        "description": "Unauthorized parking may result in your vehicle being towed at the owner's expense without prior warning"
+    },
+    {
+        "id": 10,
+        "category": "Parking",
+        "title": "Vehicle Condition",
+        "rule": "Do not store abandoned, unregistered, or inoperable vehicles on the premises",
+        "description": "Vehicles in disrepair or without valid registration take up space and may be subject to removal after a notice period"
+    },
+    {
+        "id": 11,
+        "category": "Pets",
+        "title": "Pet Registration",
+        "rule": "All pets must be registered with building management and kept up to date on vaccinations",
+        "description": "Unregistered pets violate tenancy agreements and may result in fines or required removal of the animal"
+    },
+    {
+        "id": 12,
+        "category": "Pets",
+        "title": "Pet Waste",
+        "rule": "Clean up after your pet immediately in all common and outdoor areas",
+        "description": "Failure to remove pet waste is unsanitary, disrespectful to neighbors, and subject to penalty fees"
+    },
+    {
+        "id": 13,
+        "category": "Alterations",
+        "title": "Unit Modifications",
+        "rule": "Do not make structural changes, drill into load-bearing walls, or alter plumbing and electrical systems without written approval",
+        "description": "Unauthorized modifications can compromise building integrity and void insurance; all changes require prior management consent"
+    },
+    {
+        "id": 14,
+        "category": "Alterations",
+        "title": "Painting & Décor",
+        "rule": "Do not repaint walls or make permanent decorative alterations without prior written approval from management",
+        "description": "Unapproved painting or permanent fixtures may result in restoration charges being deducted from the security deposit"
+    },
+    {
+        "id": 15,
+        "category": "Safety",
+        "title": "Fire Safety",
+        "rule": "Do not block fire exits, tamper with fire extinguishers, or disable smoke detectors at any time",
+        "description": "Obstructing fire safety equipment is illegal and endangers all building occupants; violations will be reported to authorities"
+    },
+    {
+        "id": 16,
+        "category": "Safety",
+        "title": "Prohibited Items",
+        "rule": "Do not store flammable materials, explosives, or illegal substances anywhere on the premises",
+        "description": "Hazardous materials pose a risk to the entire building and will result in immediate lease termination and legal action"
+    },
+    {
+        "id": 17,
+        "category": "Amenities",
+        "title": "Shared Amenity Booking",
+        "rule": "Reserve shared facilities such as the gym, rooftop, or event room in advance through the building management portal",
+        "description": "Walk-in use of bookable amenities is not guaranteed; failure to cancel reservations in advance may result in booking privileges being suspended"
+    },
+    {
+        "id": 18,
+        "category": "Amenities",
+        "title": "Amenity Care",
+        "rule": "Leave all shared amenities clean and in the same condition as found after each use",
+        "description": "Damage or excessive mess in shared spaces may result in repair costs being charged to the responsible resident"
+    },
+    {
+        "id": 19,
+        "category": "Moving",
+        "title": "Move-In & Move-Out Scheduling",
+        "rule": "Schedule all move-in and move-out activities with building management at least 48 hours in advance",
+        "description": "Unscheduled moves can disrupt other residents and damage common areas; freight elevators must be reserved for all large item transport"
+    },
+    {
+        "id": 20,
+        "category": "Smoking",
+        "title": "Smoke-Free Building",
+        "rule": "Smoking, vaping, or use of any tobacco or cannabis products is strictly prohibited inside the building and within 5 meters of all entrances",
+        "description": "Smoking in unauthorized areas affects air quality for all residents and may result in fines and lease termination for repeated violations"
+    }
