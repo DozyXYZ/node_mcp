@@ -2,6 +2,9 @@ import { McpServer } from "@modelcontextprotocol/sdk/server/mcp.js";
 import { StdioClientTransport } from "@modelcontextprotocol/sdk/client/stdio";
 import { StdioServerTransport } from "@modelcontextprotocol/sdk/server/stdio.js";
 import { z } from "zod";
+import * as fs from "fs/promises";
+import * as path from "path";
+import { fileURLToPath } from "url";
 
 const server = new McpServer({
   name: "node-mcp",
@@ -54,6 +57,37 @@ server.registerTool(
         {
           type: "text",
           text: `Github repositories for ${username}: (${repos.length} repos): \n\n${repoList}`,
+        },
+      ],
+    };
+  },
+);
+
+// RESOURCES: Set up the building rules
+server.registerResource(
+  "building-rules",
+  "building-rules://all",
+  {
+    description: "Resource for building rules",
+    mimeType: "text/plain",
+  },
+  async (uri) => {
+    const uriString = uri.toString();
+
+    const __filename = fileURLToPath(import.meta.url);
+    const __dirname = path.dirname(__filename);
+
+    const rules = await fs.readFile(
+      path.resolve(__dirname, "../src/data/building-rules.doc"),
+      "utf-8",
+    );
+
+    return {
+      contents: [
+        {
+          uri: uriString,
+          mimeType: "text/plain",
+          text: rules,
         },
       ],
     };
